@@ -1,6 +1,7 @@
 import React from "react";
 import { LayoutGroup, motion } from "motion/react"
 import Reveal from '../reveal/Reveal';
+import "./processstyle.css"
 
 
 const UxProcess = () => {

@@ -1,5 +1,5 @@
 import React from "react";
-import "./UxProcess.css"; // your CSS file
+import "./uxprocess.css"; // your CSS file
 import { LayoutGroup, motion } from "motion/react"
 import Reveal from '../reveal/Reveal';
 

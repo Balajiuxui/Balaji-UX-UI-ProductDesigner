@@ -21,7 +21,7 @@ const Mockupsection = () => {
 </Reveal>
 
 <Reveal direction='up' delay={0.2}>
- <img src='./public/images/mockup.png' alt="Logo" className="image-mockup" />
+ <img src='/images/mockup.png' alt="Logo" className="image-mockup" />
  <div className="section-divider-2 container"></div>
  </Reveal>
 

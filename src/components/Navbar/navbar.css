@@ -1,0 +1,97 @@
+.navbar2 {
+  height: 76px; /* desktop height */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+  background: var(--secondary-black, #1a1a1a);
+  transform: translateY(0);
+  transition: transform 0.8s ease-in-out;
+  will-change: transform;
+}
+
+.nav-links a {
+  color: var(--white2, #e5e5e5);
+  text-decoration: none;   /* remove default underline */
+  font-weight: 500;
+  position: relative;      /* required for ::after */
+  padding-bottom: 4px;     /* space for underline */
+  transition: color 0.3s ease;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 50%;               /* start from center */
+  bottom: 0;
+  width: 0%;               /* hidden initially */
+  height: 2px;
+  background: var(--primary-colour, #E63946);
+  transition: all 0.3s ease;
+  transform: translateX(-50%); /* keep it centered */
+}
+
+/* hover underline */
+.nav-links a:hover::after {
+  width: 80%;
+}
+
+/* active NavLink underline (React Router adds .active class) */
+.nav-links a.active::after {
+  width: 0%;
+}
+
+.nav-links a.active {
+  color: var(--primary-colour, #E63946);
+}
+
+.color-white
+{
+color: #FFF !important; 
+}
+
+
+/* Hamburger hidden on desktop */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: var(--white);
+  cursor: pointer;
+}
+
+/* ========== MOBILE ========== */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: var(--secondary-black);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1rem;
+    width: 100%;
+    display: none; /* hidden by default */
+  }
+
+  .nav-links.open {
+    display: flex; /* shown when state is true */
+  }
+}
+
+
+.glass-layer {
+  background: rgba(26, 26, 26, 0.7); /* Transparent grey */
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(10px);
+  border: none;          /* No border */
+  border-radius: 0;      /* No rounded corners */
+  /* padding: 20px; */
+}
+

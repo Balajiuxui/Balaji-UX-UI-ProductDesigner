@@ -1,0 +1,126 @@
+.image-mockup-projectsection
+{
+    width: 100%;
+    height: auto;
+}
+
+.project-section-para
+{
+    color: var(--fourth-black, #4C4C4C);
+font-family: Manrope;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 26px; /* 162.5% */
+padding: 16px 0 16px 0 !important;
+width: 90%;
+}
+
+.project-button {
+  color: var(--third-black, #333);
+  font-family: Manrope, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px; /* 200% */
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  padding: 12px 0;
+  width: fit-content !important;
+
+  background: none !important;   /* ✅ transparent background */
+  border: none !important;       /* ✅ remove default border */
+  outline: none;                 /* ✅ remove focus outline (optional) */
+  cursor: pointer;               /* ✅ keep pointer cursor */
+}
+
+
+.title-with-icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 16px;
+  padding-top: 5%;
+}
+
+
+.case-study-title {
+  color: var(--secondary-black, #1a1a1a);
+}
+
+
+.project-card
+{
+    background: var(--white5, #F2F2F2);
+
+  display: grid;
+ align-items: flex-start;    /* align content to start (left) */
+  justify-content: flex-start;/* align content to top */
+  text-align: left;
+  padding: 4% 4%;
+  border-radius: 8px;
+  /* margin-top: 5%; */
+
+}
+
+.no-padding-bottom {
+  padding-bottom: 0 !important;
+}
+
+
+.project-content
+{
+    display: flex;
+    flex-direction: column;
+    /* margin-top: 5%; */
+}
+
+.image-wrapper {
+  width: 100%;
+  overflow: hidden; /* hides zoomed overflow */
+  border-radius: 8px; /* optional */
+}
+
+.image-mockup-projectsection {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.5s ease; /* smooth zoom */
+}
+
+/* 🔥 Zoom image when the whole card is hovered */
+.project-content:hover .image-mockup-projectsection {
+  transform: scale(1.1);
+}
+
+
+/* 📱 Mobile responsive fix */
+@media (max-width: 768px) {
+  .project-section-para {
+    width: 100%; /* full width on tablets & smaller */
+    text-align: left; /* keep alignment clean */
+  }
+
+  .project-card {
+    padding: 8% 5%; /* less padding on mobile */
+  }
+
+  .project-button {
+    font-size: 13px; /* slightly smaller button text */
+    padding: 10px 0;
+  }
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* two per row */
+  gap: 32px; /* spacing between cards */
+  margin-top: 5%;
+}
+
+/* 📱 Mobile: stack into one per row */
+@media (max-width: 768px) {
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+}

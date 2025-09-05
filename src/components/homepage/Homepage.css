@@ -1,0 +1,141 @@
+.my-heading {
+  color: var(--white2, #E5E5E5);
+  font-family: "Clash Display", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.2; /* relative instead of fixed px */
+  
+
+
+  
+  
+  letter-spacing: -1px;
+
+  /* Fluid font sizing */
+  font-size: clamp(32px, 6vw, 96px);
+  padding: 15% 0px 32px 0px !important;
+}
+
+@media (max-width: 768px) {
+ 
+    .my-heading {
+  padding: 20% 0px 32px 0px !important;
+}
+}
+
+@media (max-width: 480px) {
+  .my-heading {
+  padding: 40% 0px 32px 0px !important;
+}
+}
+
+*
+{
+    margin: 0;
+}
+
+.landing {
+  background: var(--secondary-black, #1a1a1a);
+}
+
+
+.section-divider {
+  height: 0.6px;
+  background-color: #666;
+  margin-bottom: 12px;
+}
+
+.landing-section-below-content {
+  display: flex;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.body-large-p {
+  color: var(--white, #fff);
+  width: 50%;
+}
+
+
+.view-work-btn {
+  all: unset;
+  cursor: pointer;
+  display: inline-flex;
+  padding: 12px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background: var(--primary-colour, #e63946);
+  color: var(--white, #fff);
+  
+
+  /* button */
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px; /* 175% */
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+
+.mail-id-text {
+ color: var(--white5, #F2F2F2) !important;
+font-family: Manrope;
+font-size: 16px !important;
+font-style: normal !important;
+font-weight: 400 !important;
+line-height: 26px; /* 162.5% */
+}
+
+.icon-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 16px;
+  padding-bottom: 5%;
+}
+
+
+.mockup-section {
+  width: 100%;
+  background: var(--secondary-black, #1a1a1a);
+  display: flex;
+  align-items: center; /* Vertical centering */
+  justify-content: center; /* Horizontal centering */
+  min-height: 100vh; /* Full viewport height */
+  text-align: center;
+  padding-bottom: 3%;
+  padding-top: 5%;
+  margin-top: 5%;
+}
+
+.mockup-section-heading {
+  color: var(--white5, #f2f2f2);
+  text-align: center;
+}
+
+.mockup-section-para {
+  text-align: center;
+  color: var(--white2, #e5e5e5);
+  padding-bottom: 2% !important;
+  width: 50% !important;
+}
+
+.image-mockup {
+  height: auto;
+  width: 80%;
+  margin: 10px;
+}
+
+
+.section-divider-2 {
+  height: 1px;
+  background-color: #666;
+  margin-top: 10%;
+}
+
+
+

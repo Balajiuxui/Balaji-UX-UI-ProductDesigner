@@ -1,0 +1,40 @@
+/* Reset some default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;  /* block horizontal */
+  overflow-y: auto;    /* allow vertical */
+}
+
+
+/* Remove default link styles */
+a,
+.nav-links a {
+  text-decoration: none;   /* removes underline */
+  color: inherit;          /* inherits text color from parent */
+}
+
+/* Optional: give nav links your own style */
+.nav-links a {
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s ease;
+}
+.nav-links a.active {
+  color: var(--primary-colour); /* active = primary colour */
+}
+/* Global scroll fix */
+html, body, #root {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden; /* 🚫 block horizontal scroll */
+}
+
+* {
+  box-sizing: border-box;
+  max-width: 100%; /* prevent children from overflowing */
+}

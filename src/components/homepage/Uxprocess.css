@@ -1,0 +1,132 @@
+
+.ux-process {
+  width: 100%;
+  background: var(--secondary-black, #1a1a1a);
+}
+.section-divider-2 {
+  height: 1px;
+  background-color: #666;
+}
+
+.ux-process-title {
+  color: #fff;
+}
+
+.title-with-icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 16px;
+  padding-top: 5%;
+}
+
+.ux-process-para {
+  color: var(--white2, #e5e5e5);
+  font-family: Manrope;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 40px; /* 125% */
+  letter-spacing: 0.2px;
+  width: 50%;
+  padding-top: 56px;
+  padding-bottom: 96px;
+}
+
+.ux-process-section-number {
+  color: var(--grey3, #999);
+}
+
+.ux-process-section-title {
+  color: var(--white2, #e5e5e5);
+}
+
+.eachblock-title {
+  display: flex;
+  gap: 10px;
+  border-bottom: 0.5px solid var(--grey5, #ccc);
+}
+
+.eachblockpara {
+  color: var(--white, #fff);
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 162.5% */
+  padding: 10px 0px;
+ 
+}
+
+.overline-eachblock {
+  color: var(--white5, #f2f2f2);
+  padding-top: 16px !important;
+}
+
+ul {
+  list-style-position: inside; /* bullet will align inside padding */
+}
+
+.eachblocksubtitle {
+  color: var(--grey-2, #808080);
+  padding: 16px 0px;
+}
+
+.eachblock {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 90%;
+   max-width: 50%; 
+}
+
+.eachblockrow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  gap: 10%;
+  padding-bottom: 5%;
+}
+
+.ux-process-last-test {
+  color: var(--white, #fff);
+  text-align: center;
+  width: 100%;
+  padding: 2% 15% 12% 15% !important;
+}
+
+.paddingclass {
+  padding-bottom: 3%;
+}
+
+
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .ux-process-para {
+    width: 100%;          /* take full width */
+    font-size: 20px;      /* smaller font */
+    line-height: 28px;
+    padding-top: 24px;
+    padding-bottom: 48px;
+  }
+
+  .eachblockrow {
+    flex-direction: column;  /* stack vertically */
+    gap: 32px;               /* space between blocks */
+  }
+
+  .eachblock {
+    flex: 1 1 100%;          /* take full width */
+    max-width: 100%;
+    padding: 16px;
+  }
+
+  .ux-process-last-test {
+    padding: 8% 5% 12% 5% !important; /* tighter spacing */
+    text-align: left; /* looks better on mobile */
+  }
+}

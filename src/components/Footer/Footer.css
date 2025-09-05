@@ -1,0 +1,77 @@
+
+.site-footer {
+  background-color: #111;
+  color: #777;
+  padding: 40px 20px;
+  font-family: 'Inter', sans-serif;
+  margin-top: 10%;
+}
+
+.footer-top {
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.dev-label {
+  color: #6D6D6D;
+  font-family: "Clash Display", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+
+  /* Responsive font-size: min 14px, ideal 1.5vw, max 18px */
+  font-size: clamp(14px, 1.5vw, 18px);
+}
+
+.footer-name {
+  color: #6D6D6D;
+  font-family: "Clash Display", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.15;
+  letter-spacing: -0.05em;
+  
+  /* Responsive font size from 40px to 200px based on viewport */
+  font-size: clamp(40px, 10vw, 200px);
+}
+
+.footer-top .copyright {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #777;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  border-top: 1px solid #333;
+  padding-top: 20px;
+}
+
+.logo-social-media {
+  display: flex;
+  gap: 16px;
+}
+
+/* Default gray */
+.logo-social-media a svg path {
+  fill: #808080;
+  transition: fill 0.3s ease;
+}
+
+/* LinkedIn hover */
+.logo-social-media a:hover .linkedin-icon path {
+  fill: #0077B5; /* LinkedIn blue */
+}
+
+/* Behance hover */
+.logo-social-media a:hover .behance-icon path {
+  fill: #1769FF; /* Behance blue */
+}
+
+/* Instagram hover */
+.logo-social-media a:hover .insta-icon path {
+  fill: #E4405F; /* Instagram pink/red */
+}

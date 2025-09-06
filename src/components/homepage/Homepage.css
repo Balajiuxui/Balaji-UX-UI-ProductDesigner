@@ -167,6 +167,11 @@ line-height: 26px; /* 162.5% */
   width: 80% !important;
 }
 
+.mockup-section {
+  padding-bottom: 0px !important;
+  padding-top: 0px !important;
+}
+
 .image-mockup {
   height: auto;
   width: 100%;
@@ -181,6 +186,12 @@ line-height: 26px; /* 162.5% */
   color: var(--white2, #e5e5e5);
   padding-bottom: 4% !important;
   width: 100% !important;
+}
+
+
+.mockup-section {
+  padding-bottom: 0px !important;
+  padding-top: 0px !important;
 }
 
 .image-mockup {

@@ -31,7 +31,7 @@ const Landingsection = () => {
 
     <div className='landing-section-below-content'>
         <Reveal direction='right'>
-        <p className='body-large body-large-p'> I’m a Senior Product Designer with over 2.5 years of experience
+        <p className='body-large body-large-p mobile-p'> I’m a Senior Product Designer with over 2.5 years of experience
           turning complex problems into user-friendly solutions. I’ve designed
           8+ successful products in domains like EdTech, Smart Homes, and Social
           Impact — all from the ground up.</p>

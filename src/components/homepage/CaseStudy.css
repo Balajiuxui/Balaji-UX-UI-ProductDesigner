@@ -22,7 +22,6 @@
 .case-study-image-box {
   width: 100%;
   aspect-ratio: 1 / 1;
-  background-image: url("images/case-pingis.png"); /* default */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -30,13 +29,12 @@
   transition: all 0.4s ease;
 }
 
-/* Hovering container triggers image scale */
+/* Hover effects */
 .containerwithimage:hover .case-study-image-box {
   transform: scale(1.05);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
-/* Hovering container triggers button color change */
 .containerwithimage:hover .read-case-stude-button {
   background-color: var(--secondary-black);
   color: #fff;
@@ -59,6 +57,45 @@
 }
 
 .image-wrapper-case {
-  width: 45%;
-  max-width: 600px;
+  width: 40%;         /* or fixed width */
+  height: auto;       /* fixed height */
+  overflow: hidden;    /* hides overflow */
+  position: relative;
+}
+
+.image-wrapper-case img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;   /* keeps aspect ratio */
+  transition: transform 0.5s ease;
+}
+
+.image-wrapper-case:hover img {
+  transform: scale(1.2); /* zoom only image */
+}
+
+
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+  .containerwithimage {
+    flex-direction: column;   /* stack image & text */
+    align-items: start;
+    gap: 20px;
+  }
+
+  .case-study-container {
+    width: 100%;              /* full width for text */
+    align-items: start;       /* center align text */
+    text-align: start;
+  }
+
+  .image-wrapper-case {
+    width: 100%;               /* image takes full width */
+    max-width: 400px;          /* optional: limit size */
+  }
+
+  .read-case-stude-button {
+    padding: 12px 18px;        /* button balanced */
+  }
 }

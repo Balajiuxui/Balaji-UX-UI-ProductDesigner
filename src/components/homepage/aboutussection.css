@@ -1,0 +1,153 @@
+.aboutus {
+  background: var(--secondary-black, #1a1a1a);
+  width: 100%;
+  padding: 40px 0;
+}
+
+.aboutus-title {
+  color: #fff;
+  text-align: center;
+}
+
+.my-image {
+  width: 10vw;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.para-aboutus-right-side {
+  color: var(--white, #fff);
+}
+
+.linkedin-icon path,
+.behance-icon path,
+.insta-icon path {
+  fill: #808080;
+  transition: fill 0.3s ease;
+}
+
+.linkedin-icon:hover path {
+  fill: #0077b5;
+}
+.behance-icon:hover path {
+  fill: #1769ff;
+}
+.insta-icon:hover path {
+  fill: #e1306c;
+}
+
+.logo-social-media {
+  display: flex;
+  flex-direction: row;
+  gap: 2%;
+}
+
+.right-side-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 30px;
+  width: 70%;
+  padding-right: 10%;
+}
+
+.leftsideofaboutus {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start; /* ✅ centers image + button */
+}
+
+.aboutus-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: space-between;
+  gap: 40px;
+  padding-bottom: 7%;
+}
+
+/* ✅ Download Resume Button */
+.about-us-download {
+  display: inline-flex;
+  padding: 12px 24px;
+  justify-content: center;
+  align-items: center;
+  background: var(--primary-colour, #e63946);
+  color: var(--white, #fff);
+  white-space: nowrap;
+  border-radius: 8px;
+  cursor: pointer;
+  color: var(--white, #FFF);
+font-family: Manrope;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: 28px; /* 175% */
+letter-spacing: 0.5px;
+text-transform: uppercase;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+  text-decoration: none; /* remove underline */
+}
+
+.about-us-download:hover {
+  background-color: #d62828; /* darker red */
+}
+
+.about-us-download:active {
+  transform: scale(0.95);
+}
+
+.about-us-download:focus {
+  outline: 2px solid #fff;
+  outline-offset: 4px;
+}
+
+/* 📱 Responsive adjustments */
+@media (max-width: 768px) {
+  .aboutus-content {
+    flex-direction: column;  /* stack left + right */
+    align-items: start;
+    text-align: start;
+    gap: 40px;
+  }
+
+  .my-image {
+    width: 200px;
+    margin-bottom: 24px !important;  /* fixed size for tablets/phones */
+  }
+
+  .right-side-content {
+    width: 100%;
+    padding-right: 0;
+    align-items: start;
+  }
+
+  .para-aboutus-right-side {
+    font-size: 18px;
+    padding: 0;
+  }
+
+  .logo-social-media {
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 480px) {
+  .my-image {
+    width: 150px;  /* smaller on tiny screens */
+  }
+
+  .para-aboutus-right-side {
+    font-size: 14px;
+  }
+
+  .about-us-download {
+    font-size: 14px;
+    padding: 10px 18px;
+  }
+}

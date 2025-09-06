@@ -21,7 +21,7 @@ const Reveal = ({ children, direction = "up", delay = 0 }) => {
       variants={variants}
       initial="hidden"
       whileInView="visible"
-      transition={{ duration: 0.7, delay }}
+      transition={{ duration: 0.7, delay, ease: "easeInOut" }}
       viewport={{ once: true, amount: 0.5 }}
     >
       {children}

@@ -213,7 +213,7 @@ const UxProcess = () => {
             </motion.div>
           </div>
 
-<Reveal direction="up" delay={0.5}>
+<Reveal direction="up">
 
           <h1 className="heading-4 ux-process-last-test">
             This process isn’t just theory. It’s how I’ve shipped 8+ products —

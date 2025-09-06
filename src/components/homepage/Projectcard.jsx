@@ -4,6 +4,7 @@ import { motion } from "motion/react";
 import { useNavigate } from "react-router-dom";
 
 
+
 const Projectcard = (props) => {
   const navigate = useNavigate();
 

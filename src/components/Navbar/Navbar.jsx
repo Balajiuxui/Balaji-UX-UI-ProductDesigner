@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import "./navbar.css";
 import { motion } from "motion/react";
 
+
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   const [showNav, setShowNav] = useState(true);

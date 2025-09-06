@@ -6,6 +6,7 @@ import Footer from '../components/Footer/Footer'
 import UxProcess from '../components/homepage/Uxprocess'
 import Projectsection from '../components/homepage/Projectsection'
 import CaseStudySection from '../components/homepage/CaseStudySection'
+import AboutUs from '../components/homepage/AboutUssection'
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
    <Mockupsection />
    <UxProcess />
    <CaseStudySection />
+   <AboutUs />
    
  
    </>

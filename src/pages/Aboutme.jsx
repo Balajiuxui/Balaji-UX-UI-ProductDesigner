@@ -1,11 +1,12 @@
 import React from 'react'
 import Footer from '../components/Footer/Footer'
+import About from '../components/Aboutpage/Aboutpage'
 
 const Aboutme = () => {
   return (
     <>
-    <div>Aboutme</div>
-    
+   
+    <About />
     </>
   )
 }

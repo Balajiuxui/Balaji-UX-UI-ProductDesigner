@@ -7,6 +7,8 @@ import UxProcess from '../components/homepage/Uxprocess'
 import Projectsection from '../components/homepage/Projectsection'
 import CaseStudySection from '../components/homepage/CaseStudySection'
 import AboutUs from '../components/homepage/AboutUssection'
+import TestimonialSection from '../components/homepage/TestimonialSection'
+import CTASection from '../components/homepage/Ctasection'
 
 const Home = () => {
   return (
@@ -17,6 +19,8 @@ const Home = () => {
    <UxProcess />
    <CaseStudySection />
    <AboutUs />
+   <TestimonialSection />
+   <CTASection />
    
  
    </>

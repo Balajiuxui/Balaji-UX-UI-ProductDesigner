@@ -1,0 +1,112 @@
+.section-CTA-heading {
+  color: var(--white2, #E5E5E5);
+  padding-top: 6% !important;
+}
+
+.conta-CTA {
+  background: var(--secondary-black, #1A1A1A);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border-radius: 2px;
+}
+
+.content-detailes-heading {
+  color: var(--grey-2, #808080);
+}
+
+.detail-CTA {
+  color: var(--white, #FFF);
+
+  /* heading6 */
+  font-family: "Clash Display";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px; /* 155.556% */
+  letter-spacing: 0.2px;
+}
+
+.contact-detailes {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.contact-details-warp {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+}
+
+.withbuttom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: end;
+  width: 100%;
+  padding: 2% 2% 4% 4%;
+}
+
+.first-section-CTA {
+  padding-left: 4%;
+}
+
+/* ---------------- MOBILE + TABLET RESPONSIVENESS ---------------- */
+
+@media (max-width: 1024px) {
+  .withbuttom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+  }
+
+  .contact-details-warp {
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+  }
+
+  .detail-CTA {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-CTA-heading {
+    font-size: 24px; /* smaller heading for mobile */
+    padding-top: 10%;
+  }
+
+  .section-CTA-para {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .withbuttom {
+    padding: 6% 4%;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-CTA-heading {
+    font-size: 20px;
+    line-height: 28px;
+    text-align: left;
+  }
+
+  .section-CTA-para {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .detail-CTA {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .contact-details-warp {
+    gap: 12px;
+  }
+}

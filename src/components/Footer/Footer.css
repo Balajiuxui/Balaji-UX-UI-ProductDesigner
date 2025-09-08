@@ -52,7 +52,7 @@
 
 .logo-social-media {
   display: flex;
-  gap: 16px;
+  gap: 24px !important;
 }
 
 /* Default gray */

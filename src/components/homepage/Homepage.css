@@ -168,8 +168,8 @@ line-height: 26px; /* 162.5% */
 }
 
 .mockup-section {
-  padding-bottom: 0px !important;
-  padding-top: 0px !important;
+  padding-bottom: 2%;
+  padding-top: 2%;
 }
 
 .image-mockup {
@@ -190,8 +190,8 @@ line-height: 26px; /* 162.5% */
 
 
 .mockup-section {
-  padding-bottom: 0px !important;
-  padding-top: 0px !important;
+  padding-bottom: 24px !important;
+  padding-top: 24px !important;
 }
 
 .image-mockup {

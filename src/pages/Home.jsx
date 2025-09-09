@@ -9,10 +9,16 @@ import CaseStudySection from '../components/homepage/CaseStudySection'
 import AboutUs from '../components/homepage/AboutUssection'
 import TestimonialSection from '../components/homepage/TestimonialSection'
 import CTASection from '../components/homepage/Ctasection'
+import { useEffect } from "react";
 
 const Home = () => {
+
+   useEffect(() => {
+      window.scrollTo(0, 0);   // ✅ force scroll reset when component mounts
+    }, []);
   return (
    <>
+   
    <Landingsection />
    <Projectsection />
    <Mockupsection />

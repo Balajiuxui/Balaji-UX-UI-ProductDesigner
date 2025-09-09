@@ -1,5 +1,5 @@
 import React from "react";
-import Reveal from "../reveal/Reveal"; // adjust path as needed
+
 // import "./DhoniSection.css"; // your CSS file
 import "./Aboutpage.css"; // your styles
 
@@ -8,7 +8,7 @@ const DhoniSection = () => {
     <div className="container">
       <div className="leftandmsdimag">
         {/* Left Content */}
-        <Reveal direction="left">
+        
           <div className="left-content-msdhoni">
             <h1 className="heading-3">What M.S. Dhoni Taught Me About Design</h1>
             <h2 className="heading-7">
@@ -44,14 +44,14 @@ const DhoniSection = () => {
               <br />I don’t design for trends — I design for users.
             </div>
           </div>
-        </Reveal>
+       
 
         {/* Right Image */}
-        <Reveal direction="right">
+       
           <div className="parent-ms-dhoni-img">
             <img src="/images/ms-dhoni.png" alt="M.S. Dhoni" />
           </div>
-        </Reveal>
+        
       </div>
     </div>
   );

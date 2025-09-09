@@ -12,11 +12,14 @@ import Footer from './components/Footer/Footer'
 import Econet from './pages/Projectpages/Econet'
 import Foursight from './pages/Projectpages/Foursight'
 import Slatoexams from './pages/Projectpages/Slatoexams'
+import ScrollToTop from './components/Scorlltop'
+
+
 
 function App() {
   return (
     <>
-      <BrowserRouter>
+
         <Navbar />   {/* ✅ Navbar stays here so it shows on every page */}
         <Routes>
           <Route path='/' element={<Home />} />
@@ -28,7 +31,7 @@ function App() {
              <Route path='/slatoexams' element={<Slatoexams />} />
         </Routes>
         <Footer />
-      </BrowserRouter>
+
     </>
   )
 }

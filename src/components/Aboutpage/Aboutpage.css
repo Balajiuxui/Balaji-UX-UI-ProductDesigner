@@ -341,3 +341,8 @@
     padding: 12% 6%;
   }
 }
+
+
+#about {
+  scroll-margin-top: 80px;
+}

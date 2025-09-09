@@ -1,6 +1,5 @@
 import React from "react";
 import { LayoutGroup, motion } from "motion/react"
-import Reveal from '../reveal/Reveal';
 import "./processstyle.css"
 
 
@@ -9,7 +8,7 @@ const UxProcess = () => {
     <section className="ux-process" id="design-process">
       <div className="container">
         <div className="ux-process-title-para">
-            <Reveal direction="up">
+        
           <div className="title-with-icon">
             <img
               src="icons/Group 255.svg"
@@ -20,14 +19,13 @@ const UxProcess = () => {
               How I Design — Fast, Focused, and for People
             </h1>
           </div>
-          </Reveal>
-          <Reveal direction="up" delay={0.2}>
+        
           <p className="ux-process-para">
             I design with speed and empathy — combining Design Thinking and Lean
             UX to solve real problems through quick learning, testing, and
             iteration.
           </p>
-          </Reveal>
+          
         </div>
 
         <div className="ux-process-section">
@@ -213,14 +211,14 @@ const UxProcess = () => {
             </motion.div>
           </div>
 
-<Reveal direction="up">
+
 
           <h1 className="heading-4 ux-process-last-test">
             This process isn’t just theory. It’s how I’ve shipped 8+ products —
             from real-time factory dashboards to gamified rural learning
             platforms — all with empathy, speed, and measurable success.
           </h1>
-          </Reveal>
+        
         </div>
       </div>
     </section>

@@ -2,14 +2,14 @@
 import React from "react";
 import "./CaseStudy.css";
 import { motion } from "motion/react";
-import Reveal from '../reveal/Reveal';
+
 
 const CaseStudySection = () => {
   return (
     <section className="case-study">
       <div className="container">
         {/* Title Section */}
-        <Reveal direction="up">
+        
         <div className="title-with-icon paddingclass">
           <img
             src="icons/casestudyicon.svg"
@@ -20,7 +20,7 @@ const CaseStudySection = () => {
             Deep Dives — Design Thinking in Action
           </h1>
         </div>
-        </Reveal>
+        
 
         {/* Case Study 1 */}
         <motion.div

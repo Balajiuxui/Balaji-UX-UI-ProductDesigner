@@ -3,19 +3,19 @@ import "./Projectsection.css"
 import { motion } from "motion/react"
 import Projectcard from './Projectcard'
 import { projects } from "./Projectdata.js";
-import Reveal from '../reveal/Reveal';
+
 
 
 const Projectsection = () => {
     console.log(projects)
   return (
     <>
-    <Reveal direction='up'>
+  
     <div class="title-with-icon paddingclass no-padding-bottom container reveal from-bottom">
 <img src="icons/casestudyicon.svg" alt="Description of icon" class="ux-process-icon"/>
 <h1 class="heading-4 case-study-title">Featured Projects — From Insight to Impact</h1>
 </div>
-</Reveal>
+
 
     <div className='container' >
         <div className="project-grid">

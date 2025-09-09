@@ -1,10 +1,9 @@
 import React from "react";
 import "./Footer.css"; // optional if you have styles
-import Reveal from '../reveal/Reveal';
 
 const Footer = () => {
   return (
-    <Reveal direction="up">
+    
     <footer className="site-footer">
         
       <div className="container">
@@ -95,7 +94,7 @@ const Footer = () => {
       </div>
    
     </footer>
-       </Reveal>
+      
   );
 };
 

@@ -2,16 +2,15 @@ import React from 'react';
 import { Typewriter } from "react-simple-typewriter";
 import "./Homepage.css"
 import { LayoutGroup, motion } from "motion/react"
-import Reveal from '../reveal/Reveal';
 import { useNavigate } from "react-router-dom";
 
 
 const Landingsection = () => {
     const navigate = useNavigate();
   return (
-    <section className='landing'>
+    <section className='landing' id="top">
         <div className='container'>
-             <Reveal direction="up" >
+          
     <h1 className='my-heading'>Designing Digital <br />
       Products with <br />
       {" "}
@@ -26,18 +25,18 @@ const Landingsection = () => {
           delaySpeed={1000}   // delay before deleting
         />
       </span></h1>
-      </Reveal>
+    
     <div className='section-divider'></div>
 
     <div className='landing-section-below-content'>
-        <Reveal direction='right'>
+        
         <p className='body-large body-large-p mobile-p'> I’m a Senior Product Designer with over 2.5 years of experience
           turning complex problems into user-friendly solutions. I’ve designed
           8+ successful products in domains like EdTech, Smart Homes, and Social
           Impact — all from the ground up.</p>
-          </Reveal>
+         
 
-        <Reveal direction='left'>
+      
         <motion.button   whileHover={{
     scale: 1.1,
     transition: { duration: 0.2 }
@@ -50,10 +49,8 @@ const Landingsection = () => {
     
     className='view-work-btn' 
   onClick={() => navigate("/work")}
-  >ViewWork</motion.button></Reveal>
+  >ViewWork</motion.button>
     </div>
-
-         <Reveal direction='right' delay={0.3}>
            <div className="mailid">
         <div className="icon-wrapper">
   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -63,7 +60,7 @@ const Landingsection = () => {
   <a className="mail-id-text body-base" href="mailto:Balajipaulpandian@gmail.com">balajipaulpandian@gmail.com</a>
   </div>
 </div>
-</Reveal>
+
 
 
 

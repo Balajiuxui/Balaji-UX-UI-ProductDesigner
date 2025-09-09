@@ -1,14 +1,13 @@
 // AboutUs.jsx
 import React from "react";
 import "./aboutussection.css";
-import Reveal from '../reveal/Reveal';
 import { LayoutGroup, motion } from "motion/react"
 
 const AboutUs = () => {
   return (
     <section className="aboutus">
       <div className="container">
-        <Reveal direction="up">
+      
         <div className="title-with-icon reveal from-bottom paddingclass">
           <img
             src="icons/aboutus.svg"
@@ -19,23 +18,23 @@ const AboutUs = () => {
             Who I Am Beyond the Pixels
           </h1>
         </div>
-        </Reveal>
+       
 
         <div className="aboutus-content reveal from-bottom">
           {/* Left Side */}
 
 
           <div className="leftsideofaboutus">
-            <Reveal direction="up">
+            
             {/* ✅ Direct image instead of CSS background */}
             <img
               src="images/image.svg"
               alt="My profile"
               className="my-image"
             />
-            </Reveal>
+            
 
-            <Reveal direction="up">
+           
           <motion.a
     href="icons/casestudyicon.svg"
     download
@@ -46,13 +45,13 @@ const AboutUs = () => {
   >
     Download resume
   </motion.a>
-            </Reveal>
+            
           </div>
 
           {/* Right Side */}
 
           <div className="right-side-content">
-            <Reveal direction="up">
+            
             <p className="heading-4 para-aboutus-right-side">
               I'm a curious, hands-on Product Designer who thrives on solving
               messy, real-world problems. With a mechanical engineering mindset
@@ -61,10 +60,10 @@ const AboutUs = () => {
               design fast, think iteratively, and care deeply about accessibility,
               clarity, and impact — especially in education and emerging tech.
             </p>
-            </Reveal>
+           
 
             {/* Social Icons */}
-            <Reveal direction="up">
+           
             <div className="logo-social-media">
               <a
                 href="https://www.linkedin.com/in/balaji-p-397256218/"
@@ -123,7 +122,7 @@ const AboutUs = () => {
                 {/* ... keep your SVG code here */}
               </a>
             </div>
-            </Reveal>
+          
           </div>
         </div>
       </div>

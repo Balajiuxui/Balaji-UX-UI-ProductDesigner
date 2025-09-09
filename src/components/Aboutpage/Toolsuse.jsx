@@ -1,6 +1,5 @@
 import React from "react";
 import "./Aboutpage.css"; // your styles
-import Reveal from "../reveal/Reveal";
 
 const tools = [
   { src: "/icons/figma-svgrepo-com 1.svg", alt: "Figma Icon", name: "Figma" },
@@ -15,7 +14,7 @@ const tools = [
 const Tools = () => {
   return (
     <section className="tools-using">
-        <Reveal direction="up">
+    
       <div className="container">
         {/* Title */}
         <div className="title-with-icon paddingclass reveal from-bottom">
@@ -39,7 +38,6 @@ const Tools = () => {
           ))}
         </div>
       </div>
-      </Reveal>
     </section>
   );
 };

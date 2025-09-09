@@ -1,5 +1,4 @@
 import React from "react";
-import Reveal from "../reveal/Reveal"; // adjust path as needed
 import "./Aboutpage.css"; // your styles
 
 const EnjoySection = () => {
@@ -7,7 +6,6 @@ const EnjoySection = () => {
     <div className="combine-boths-section">
       {/* Left: What I Enjoy Creating */}
       <section className="WhatIEnjoyCreating">
-        <Reveal direction="left">
           <div className="content-whatIEnjoy">
             <h1 className="heading-3 WhatIEnjoyCreating-h">
               What I Enjoy Creating
@@ -24,12 +22,11 @@ const EnjoySection = () => {
               3D & Shader Experiments
             </p>
           </div>
-        </Reveal>
+
       </section>
 
       {/* Right: A Few Personal Things I Enjoy */}
       <section className="fewthings">
-        <Reveal direction="right">
           <div className="fewthingsheading">
             <h1 className="heading-3 WhatIEnjoyCreating-h">
               A Few Personal Things I Enjoy
@@ -82,7 +79,6 @@ const EnjoySection = () => {
               <p className="body-large icon-p">Three JS</p>
             </div>
           </div>
-        </Reveal>
       </section>
     </div>
   );

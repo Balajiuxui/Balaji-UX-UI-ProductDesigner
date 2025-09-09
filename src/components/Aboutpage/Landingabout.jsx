@@ -1,13 +1,11 @@
 // LandingAbout.jsx
 import React from "react";
 import "./Aboutpage.css"; // your styles
-import Reveal from "../reveal/Reveal";
 
 const LandingAbout = () => {
   return (
-    <section className="landing landing-aboutus">
+    <section className="landing landing-aboutus" id="top">
       <div className="container">
-        <Reveal direction="up">
         <div className="withimage-aboutus-landing-section">
           {/* Left Side Image */}
           <img
@@ -117,7 +115,7 @@ const LandingAbout = () => {
             </div>
           </div>
         </div>
-        </Reveal>
+  
       </div>
     </section>
   );

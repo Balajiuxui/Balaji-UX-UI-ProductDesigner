@@ -1,12 +1,11 @@
 // CTASection.jsx
 import React from "react";
 import "./CTASection.css";
-import Reveal from '../reveal/Reveal';
 
 const CTASection = () => {
   return (
     <section className="section-CTA">
-        <Reveal direction="up">
+      
       <div className="container">
         <div className="conta-CTA">
           {/* Left text block */}
@@ -79,7 +78,7 @@ const CTASection = () => {
           </div>
         </div>
       </div>
-      </Reveal>
+
     </section>
   );
 };

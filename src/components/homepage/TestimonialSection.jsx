@@ -2,7 +2,7 @@
 import React from "react";
 import "./Feedback.css";
 import { LayoutGroup, motion } from "motion/react"
-import Reveal from '../reveal/Reveal';
+
 
 const testimonials = [
   {
@@ -29,7 +29,7 @@ Despite his league of prolonging projects, he ensured I learn every possible det
 const TestimonialSection = () => {
   return (
     <section className="testimonial">
-      <Reveal direction="up">
+
       <div className="container">
         {/* Title */}
         <div className="title-with-icon paddingclass">
@@ -60,7 +60,6 @@ const TestimonialSection = () => {
           ))}
         </div>
       </div>
-      </Reveal>
     </section>
   );
 };

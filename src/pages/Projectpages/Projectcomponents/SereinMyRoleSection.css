@@ -1,0 +1,74 @@
+
+.myrolepara {
+  text-align: left;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.content-listing {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  padding: 2% 0 8% 0;
+}
+
+.leftside-content,
+.rightside-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+.content-list-each {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  align-items: center; /* Changed from flex-start to center */
+}
+
+.content-list-each img {
+  width: 20px;
+  height: auto;
+}
+
+.content-text {
+  padding: 12px 0;
+  color: var(--grey-2, #808080);
+}
+
+.highlight {
+  color: var(--secondary-black, #1A1A1A);
+}
+
+/* ===== MOBILE RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .content-listing {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .content-list-each {
+    gap: 12px;
+  }
+
+  .content-list-each img {
+    width: 16px;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .section-description,
+  .content-text,
+  .highlight {
+    font-size: 0.95rem;
+  }
+}
+
+
+.content-list-each-p
+{
+    padding: 0px !important;
+}

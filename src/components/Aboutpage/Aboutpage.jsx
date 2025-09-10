@@ -17,8 +17,7 @@ const About = () => {
   return (
     <div key={window.location.pathname} id="about"> 
     <LandingAbout />
-    <Tools />
-    
+    <Tools /> 
     <EnjoySection />
     <DhoniSection />
     <CTASection />

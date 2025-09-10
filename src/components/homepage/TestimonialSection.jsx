@@ -10,19 +10,19 @@ const testimonials = [
 Despite his league of prolonging projects, he ensured I learn every possible detail and helped my design better products.`,
     name: "Manash",
     role: "UX UI Designer",
-    side: "left",
+    side: "left1",
   },
   {
     text: `Balaji possesses exceptional talent as a UX/UI Designer. I worked with him while I was designing the company website and SaaS tool in my previous role. While collaborating with him I learned from his expert understanding of user behavior. His acute design sensibilities and meticulous attention to detail make our collaboration effortless.`,
     name: "Chrysllynn D’Costa",
     role: "Client",
-    side: "right",
+    side: "right1",
   },
   {
     text: `I highly endorse Balaji for his exceptional skills and enthusiasm. He is a powerhouse of innovative ideas and possesses the execution prowess to bring any project to life. Balaji's intuitive mind and ability to manage real-time challenges make him an invaluable asset. Having collaborated with him on multiple projects, I can confidently recommend Balaji for any product-based initiatives. His dedication and expertise ensure success in every endeavor.`,
     name: "Priti Naidu",
     role: "Designer",
-    side: "left",
+    side: "left1",
   },
 ];
 
@@ -51,7 +51,7 @@ const TestimonialSection = () => {
             >
               <p className="quote body-large">"{item.text}"</p>
               <div className="name-role">
-                <p className={item.side === "right" ? "name-left" : "name"}>
+                <p className={item.side === "right1" ? "name-left" : "name"}>
                   – {item.name}
                 </p>
                 <p className="role">{item.role}</p>

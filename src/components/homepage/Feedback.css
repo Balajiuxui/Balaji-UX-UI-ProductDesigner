@@ -26,9 +26,10 @@
 
 .rightside-testimonial {
   display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  width: fit-content;
+  flex-direction: column !important;
+  justify-content: flex-end !important;
+  width: fit-content !important;
+  border: None !important;
 }
 
 .left-testimonial {
@@ -64,12 +65,12 @@
   /* background-color: #111; */
 }
 
-.testimonial.left {
+.testimonial.left1 {
   align-self: flex-start;
   text-align: left;
 }
 
-.testimonial.right {
+.testimonial.right1 {
   align-self: flex-end;
   text-align: right;
 }
